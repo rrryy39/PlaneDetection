@@ -31,6 +31,7 @@ int main()
   //Set Peremeters
 	seg.setOptimizeCoefficients(true);
 	seg.setModelType(pcl::SACMODEL_PLANE);
+  //Use RANSAC algrithm to determine the parameters
 	seg.setMethodType(pcl::SAC_RANSAC);
 	seg.setDistanceThreshold(0.001);
 	seg.setInputCloud(cloud);
